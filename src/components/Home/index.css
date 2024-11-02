@@ -1,0 +1,84 @@
+.movie-page-container {
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    min-height: 100vh;
+}
+
+.light {
+    background-color: #e6f1ff;
+    color: #000000;
+}
+
+.dark {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.movie-list-container {
+    list-style-type: none;
+    width: 90%;
+    padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .movie-list-container {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .movie-list-container {
+        width: 85%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .movie-list-container {
+        width: 80%;
+    }
+}
+
+.no-movies-found {
+    font-family: "Roboto";
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+/* Pagination */
+
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.page-button {
+    font-size: 15px;
+    font-weight: 500;
+    color: #333333;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 5px 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.page-active {
+    background-color: #256fff;
+    color: #ffffff;
+}

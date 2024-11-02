@@ -1,0 +1,107 @@
+.movie-list-item {
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 4px 8px rgba(0, 0.5, 0, 0.1);
+}
+
+@media screen and (min-width: 768px) {
+    .movie-list-item {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+.movie-poster-img {
+    width: 200px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (min-width: 1200px) {
+    .movie-poster-img {
+        width: 300px;
+    }
+}
+
+.movie-poster-details {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .movie-poster-details {
+        padding-left: 15px;
+    }
+}
+
+.movie-title {
+    font-family: "Roboto";
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    line-height: 60px;
+    /* margin-bottom: 8px; */
+    margin-top: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+    .movie-title {
+        margin-top: 0;
+        font-size: 50px;
+        line-height: 60px;
+    }
+} 
+
+.movie-release-date {
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 400;
+    color: #555;
+    line-height: 30px;
+    margin-bottom: 6px;
+}
+
+@media screen and (min-width: 1200px) {
+    .movie-release-date {
+        font-size: 18px;
+        line-height: 40px;
+    }
+} 
+
+.movie-rating {
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 400;
+    color: #101b6d;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+    .movie-rating {
+        font-size: 18px;
+        line-height: 40px;
+    }
+} 
+
+.movie-overview {
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 400;
+    color: #555;
+    line-height: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+    .movie-overview {
+        font-size: 18px;
+        line-height: 30px;
+    }
+} 

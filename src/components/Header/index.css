@@ -1,0 +1,147 @@
+.nav-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: red;
+}
+
+.light {
+    background-color: #e6f1ff;
+    color: #000000;
+}
+
+.dark {
+    background-color: #111111;
+    color: #ffffff;
+}
+
+.nav-content {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+@media screen and (min-width: 1200px) {
+    .nav-content {
+        width: 80%;
+    }
+}
+
+/* for mobile device */
+
+.nav-mobile-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .nav-mobile-container {
+        display: none;
+    }
+}
+
+.search-mobile-icon {
+    font-size: 25px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+/* for desktop device */
+
+.nav-desktop-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+@media screen and (max-width:767px) {
+    .nav-desktop-container {
+        display: none;
+    }
+}
+
+.movie-name-heading {
+    font-size: 16px;
+    font-weight: 500;
+    flex-grow: 1;
+    letter-spacing: 1px;
+}
+
+@media screen and (min-width: 768px) {
+    .movie-name-heading {
+        width: 16%;
+    }
+}
+
+.input-search-box {
+    font-size: 16px;
+    height: 35px;
+    width: auto;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    width: 100%;
+    border: none;
+    outline-color: #f5a56d;
+}
+
+.search-button {
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 50px;
+    height: 34px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.search-button.light {
+    color: #fff;
+    background-color: #333;
+}
+
+.search-button.dark {
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+}
+
+.light-icon {
+    font-size: 25px;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.dark-icon {
+    font-size: 25px;
+    cursor: pointer;
+    color: #000000;
+}
+
+/* Search bar open */
+
+.search-bar-container {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    padding: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .search-bar-container {
+        display: none;
+    }
+}
